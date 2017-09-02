@@ -71,8 +71,8 @@ Here is an example of a traffic sign image after normarization.
 
 
 #### 2. Model Architecture
-I describe what my final model architecture looks like including model type, layers, layer sizes, connectivity, etc.
-I used LeNet for classification and my final model consisted of the following layers:
+I describe what my final model architecture looks like, including model type, layers, layer sizes, connectivity, etc.
+I used `LeNet` for classification and my final model consisted of the following layers:
 
 | Layer         		|     Description	        					| 
 |:---------------------:|:---------------------------------------------:| 
@@ -109,7 +109,7 @@ To train the model, I used LeNet and the parameters in the table below
 #### 4. Model Training Result
 This step code is contained in `Train, Validate and Test the Model` section  in `P3.ipynb`.
 
-At first, I used just `LeNet` and the accuracy of validation data set is not good. This seems to be `over fitting` to train data set.  To avoid `over fitting`, I add `Dropout` to the layers.
+At first, I used just `LeNet` and the accuracy of validation data set is not good. This seems to be `over fitting` to train data set.  To avoid `over fitting`, I add `Dropout` to the layers between fully connected layers.
 
 My final model results are:
 
@@ -127,12 +127,12 @@ Here are five German traffic signs that I found on the web:
 
 ![alt text][image9]
 
-The first image might be difficult to classify because it's looks like fifth image, which has same color (only red, black and white).
+The first image might be difficult to classify because it's looks like third image, which has same color (only red, black and white).
 In this project, I use collor image as input image and if color is the same, I think my DNN misunderestanding the images.
 
 
 #### 2. Prediction result for New Images
-This section discusses the model's predictions on these new traffic signs and compare the results to predicting on the test set. 
+This section discusses the model's predictions on these new traffic signs and compare the results of predicting on the test set. 
 
 Here are the results of the prediction:
 
@@ -153,8 +153,6 @@ I describe how certain the model is when predicting on each of the five new imag
 Provide the top 5 softmax probabilities for each image along with the sign type of each probability.
 
 The code for making predictions on my final model is located in `Output Top 5 Softmax Probabilities For Each Image Found on the Web` of `P3.ipynb`.
-
-#### For the first image, the model is relatively sure that this is a stop sign (probability of 0.6), and the image does contain a stop sign. The top five soft max probabilities were
 
 #### In 5 German traffic signals, the top five soft max probabilities are:
 
@@ -217,7 +215,5 @@ For the fifth image ...
 | .02	      	|26		| Traffic signals 				            |
 | .00			|12	    | Priority road		                        |
 
-### (Optional) Visualizing the Neural Network (See Step 4 of the Ipython notebook for more details)
-####1. Discuss the visual output of your trained network's feature maps. What characteristics did the neural network use to make classifications?
 
 
